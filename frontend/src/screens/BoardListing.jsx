@@ -188,6 +188,13 @@ const BoardListing = () => {
                       <h3 className="text-white font-semibold text-lg">{board?.title}  <span className='text-xs'> {user._id === board?.createdBy ? "(owner)" : "(member)"} </span> </h3>
                     </Link>
                     <div className="flex gap-2">
+                      <Link to={`/board?id=${board._id}`}>
+                        <button
+                          className="text-gray-300 underline hover:text-white hover:bg-blue-600 p-2 rounded-lg transition-all"
+                        >
+                          View
+                        </button>
+                      </Link>
                       <button
                         onClick={() => openEditModal(board)}
                         className="text-gray-300 hover:text-white hover:bg-gray-700 p-2 rounded-lg transition-all"
