@@ -37,6 +37,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
+      "https://task-manager-ivory-seven.vercel.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD"],
     allowedHeaders: [
